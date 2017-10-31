@@ -3,10 +3,11 @@
 	<head>
 		<title>Counter JS</title>
 		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
 	</head>
 
 
-	<body style="container">
+	<body id="stlb">
 	<style>
 		
 
@@ -14,11 +15,18 @@
 
 	 
 	border:solid black ;
-	border-radius: 10px;
-	width: 10%;
+	border-radius: 50%;
+	width: 5%;
 	margin: auto;
 	margin-top: 10%;
-	padding: 10%;
+	padding: 5%;
+	font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+#stlb {
+
+	background-color: #00aeff;
+	
 }
 
 
@@ -26,7 +34,10 @@
 
 
 
-	</style>	
+
+
+	</style>
+	<div id="divstyle">	
 	<p id="tempsRestant"></p>
      
 	<script>
@@ -45,13 +56,15 @@
 				secondes = Math.floor(diff/1000-minutes*60);
 				ms = diff-minutes*60*1000-secondes*1000;
 
-				document.getElementById('tempsRestant').innerHTML = minutes+"mn "+secondes+'s '+ms+'ms';
+				document.getElementById('tempsRestant').innerHTML = minutes+"mn "+secondes+'s ';
 			}
 		}
 
 		var monInterval = setInterval(combienResteTIl, 10);
 
 	</script>
+
+	</div>
 
 	</body>
 </html>
